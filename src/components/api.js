@@ -1,0 +1,1 @@
+export const API = "https://shopcart-backend-lo55.onrender.com"

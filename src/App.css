@@ -1,38 +1,297 @@
-.App {
-  text-align: center;
+body{
+  background-color: rgb(33,37,41);
+  font-family: "Oxanium", sans-serif;
+}
+.navbar-brand{
+  font-weight: bold;
+}
+.caro-pic{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#carouselExample{
+  margin-top: 50px;
+}
+.card{
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card:hover{
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 20px rgb(33,37,41);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.swipe-img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+.slider-div{
+  margin: 30px;
+  cursor: pointer;
+  img{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slider-div{
+  img:hover{
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 20px rgb(33,37,41);
+  }
+}
+.card-list{
+  color: #fff;
+  letter-spacing: 2px;
+  margin-left: 20px
+}
+.white{
+  color: #fff;
+  text-align: center;
+  font-weight:bold;
+}
+.white1{
+  color: #fff;
+  text-align: center;
+  margin-top: 70px;
+font-weight:bold;
+}
+.card-container{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.card-container2{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  margin-top: 100px;
+}
+.slider-container2{
+  margin: 30px;
+  border: 1px black;
+}
+.list-img{
+  height: 200px;
+  width: 180px;
+  object-fit: cover;
+}
+.code{
+  border-bottom: 2px solid  #565c61;
+  width: 100%;
+  padding-bottom: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+.foot-img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.foot-img:hover{
+  background-color: #fff;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.end{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+.profile{
+ position: relative;
+ top: 6px;
+}
+.profile2{
+  position: relative;
+  top: 6px;
+}
+.main{
+  height: 99vh;
+  width: 100%;
+}
+.content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.slider-container-cloth{
+  margin: 30px;
+  height: 100px;
+}
+.cloth-auto{
+  height: fit-content;
+  width: fit-content;
+}
+.fashion-h1{
+  margin: 30px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+#carouselExampleSlidesOnly{
+  margin-top: 50px;
+}
+.couples{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+}
+.couples2{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 100px;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.couples2 img {
+  width: 70%;
+  height: 70%;
+  transition: transform 0.5s ease;
+
+}
+.couples2:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.dropdown{
+  margin-left: 50px;
+}
+.dropdown-menu{
+  background-color: #565c61;
+}
+.dropdown-menu li{
+  margin-left: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.div-section{
+  display: flex;
+}
+.womens-card{
+  margin-top: 70px;
+  height: fit-content;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 200px;
+  color: #fff;
+
+  img{
+    height: 200px;
+    width: 300px;
+    object-fit: contain;
+    transition: transform 0.5s ease;
   }
-  to {
-    transform: rotate(360deg);
+}
+.womens-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(220, 213, 213, .3);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.womens-container{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.container {
+  padding: 2px 16px;
+  text-align: center;
+}
+.paras{
+  display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+}
+.detail-card-container{
+  color: #fff;
+}
+.model{
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+.model-content{
+  color: #fff;
+  background-color: rgb(33,37,41);
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close{
+  color: #fff;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.detail-card{
+  display: flex;
+  color: #fff;
+  flex-wrap: wrap;
+}
+.detail-img{
+  height: 400px;
+  width: 400px;
+  object-fit: contain;
+}
+.detail-btn{
+  display: flex;
+  gap: 20px;
+}
+.login{
+  text-align: center;
+  font-weight: bold;
+}
+.login-card{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border: 1px solid #888;
+
+  p{
+    color: #888;
   }
+}
+.span-register{
+  color: #fff;
+  cursor: pointer;
+}
+#but{
+  background-color: #565c61;
+  border: none;
 }
